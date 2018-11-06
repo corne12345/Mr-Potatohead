@@ -9,12 +9,15 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Global variables of type ImagaView to prevent repetitive appointment
     public ImageView armsIV, earsIV, eyebrowsIV, eyesIV, glassesIV, hatIV, mouthIV, mustacheIV, noseIV, shoesIV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Load the states of all the images if there is an instance present
         if (savedInstanceState != null) {
             (findViewById(R.id.Arms)).setVisibility(savedInstanceState.getInt("arms"));
             (findViewById(R.id.Ears)).setVisibility(savedInstanceState.getInt("ears"));
@@ -31,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState){
         super.onSaveInstanceState(outState);
+
+        // Just save images since checkboxes are automatically saved
         outState.putInt("arms", (findViewById(R.id.Arms)).getVisibility());
         outState.putInt("ears", (findViewById(R.id.Ears)).getVisibility());
         outState.putInt("eyebrows", (findViewById(R.id.Eyebrows)).getVisibility());
