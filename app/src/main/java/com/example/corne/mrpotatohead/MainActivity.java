@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("shoes", (findViewById(R.id.Shoes)).getVisibility());
     }
 
-    //
     public void checkClicked(View v) {
         CheckBox checkbox = (CheckBox) v;
         String clothing = checkbox.getText().toString();
