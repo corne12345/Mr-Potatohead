@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkbox = (CheckBox) v;
         String clothing = checkbox.getText().toString();
         boolean checked = checkbox.isChecked();
-        ImageView image;
 
+        // Create switch statement to assign all Imageviews and set visibility
         switch (clothing) {
             case "Arms":
                 armsIV = findViewById(R.id.Arms);
