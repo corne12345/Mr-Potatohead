@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Global variables of type ImagaView to prevent repetitive appointment
+    // Global variables of type ImageView to prevent repetitive appointment
     public ImageView armsIV, earsIV, eyebrowsIV, eyesIV, glassesIV, hatIV, mouthIV, mustacheIV, noseIV, shoesIV;
 
     @Override
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public void onSaveInstanceState(Bundle outState){
         super.onSaveInstanceState(outState);
 
-        // Just save images since checkboxes are automatically saved
+        // Only save visibility since checkboxes are automatically saved
         outState.putInt("arms", (findViewById(R.id.Arms)).getVisibility());
         outState.putInt("ears", (findViewById(R.id.Ears)).getVisibility());
         outState.putInt("eyebrows", (findViewById(R.id.Eyebrows)).getVisibility());
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("hat", (findViewById(R.id.Hat)).getVisibility());
         outState.putInt("mouth", (findViewById(R.id.Mouth)).getVisibility());
         outState.putInt("mustache", (findViewById(R.id.Mustache)).getVisibility());
-        outState.putInt("nose", (findViewById(R.id.Nose)).getVisibility());        outState.putInt("glasses", (findViewById(R.id.Glasses)).getVisibility());
+        outState.putInt("nose", (findViewById(R.id.Nose)).getVisibility());
         outState.putInt("shoes", (findViewById(R.id.Shoes)).getVisibility());
     }
 
@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     armsIV.setVisibility(View.INVISIBLE);
                 }
+                break;
             case "Ears":
                 earsIV = findViewById(R.id.Ears);
                 if (checked) {
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     earsIV.setVisibility(View.INVISIBLE);
                 }
+                break;
             case "Eyebrows":
                 eyebrowsIV = findViewById(R.id.Eyebrows);
                 if (checked) {
@@ -76,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     eyebrowsIV.setVisibility(View.INVISIBLE);
                 }
+                break;
             case "Eyes":
                 eyesIV = findViewById(R.id.Eyes);
                 if (checked) {
@@ -83,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     eyesIV.setVisibility(View.INVISIBLE);
                 }
+                break;
             case "Glasses":
                 glassesIV = findViewById(R.id.Glasses);
                 if (checked) {
@@ -90,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     glassesIV.setVisibility(View.INVISIBLE);
                 }
+                break;
             case "Hat":
                 hatIV = findViewById(R.id.Hat);
                 if (checked) {
@@ -97,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     hatIV.setVisibility(View.INVISIBLE);
                 }
+                break;
             case "Mouth":
                 mouthIV = findViewById(R.id.Mouth);
                 if (checked) {
@@ -104,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     mouthIV.setVisibility(View.INVISIBLE);
                 }
+                break;
             case "Mustache":
                 mustacheIV = findViewById(R.id.Mustache);
                 if (checked) {
@@ -111,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     mustacheIV.setVisibility(View.INVISIBLE);
                 }
+                break;
             case "Nose":
                 noseIV = findViewById(R.id.Nose);
                 if (checked) {
@@ -118,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     noseIV.setVisibility(View.INVISIBLE);
                 }
+                break;
             case "Shoes":
                 shoesIV = findViewById(R.id.Shoes);
                 if (checked) {
@@ -125,6 +134,9 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     shoesIV.setVisibility(View.INVISIBLE);
                 }
+                break;
+            default:
+                break;
         }
     }
 }
