@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="@drawable/room"
     tools:context=".MainActivity">
 
     <FrameLayout
         android:id="@+id/Frame"
-        android:layout_width="227dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Tables"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,6 +103,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="32dp"
+        android:background="#40ffffff"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -228,6 +230,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:onClick="checkClicked"
                 android:text="Shoes"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Nose1"
