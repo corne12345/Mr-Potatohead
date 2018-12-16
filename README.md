@@ -13,8 +13,8 @@ There is a total of 10 body parts to append or remove. The app works both in lan
 <img src="https://github.com/corne12345/Mr-Potatohead/blob/master/doc/Screenshot_20181216-141828_Mr%20Potatohead.jpg" alt="drawing" width="200"/>
 Figure 1: Fully dressed figurine in portrait mode
 
-<img src="https://github.com/corne12345/Mr-Potatohead/blob/master/doc/Screenshot_20181216-141844_Mr%20Potatohead.jpg" alt="drawing" width="200"/>
+<img src="https://github.com/corne12345/Mr-Potatohead/blob/master/doc/Screenshot_20181216-141844_Mr%20Potatohead.jpg" alt="drawing" height="200"/>
 Figure 2: Fully stripped figure in landscape mode
 
-<img src="https://github.com/corne12345/Mr-Potatohead/blob/master/doc/Screenshot_20181216-141926_Mr%20Potatohead.jpg" alt="drawing" width="200"/>
+<img src="https://github.com/corne12345/Mr-Potatohead/blob/master/doc/Screenshot_20181216-141926_Mr%20Potatohead.jpg" alt="drawing" height="200"/>
 Figure 3: Partly dressed figure in landscape mode
